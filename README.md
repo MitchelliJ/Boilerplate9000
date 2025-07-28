@@ -14,6 +14,8 @@ This will create neccessary documents in the /reference directory. You can then:
 
 ![Kermit sipping coffee while vibe coding](r9soy.jpg)
 
+✨I encourage you to fork this repo and customize the prompts to your own project needs and prompting style.✨
+
 ## Tips
 
 - Explicitly prompt the AI to follow the instructions in the files.
