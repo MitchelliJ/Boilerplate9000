@@ -8,9 +8,9 @@
 Then:
 
 5. Start a new conversation for each generated PRD, lead the conversation with the generated documents for context and tell it to finish the to-do list.
-6. Sip coffee
+6. Sip coffee while AI builds your app
 
-![alt text](r9soy.jpg)
+![Kermit sipping coffee while vibe coding](r9soy.jpg)
 
 ## Tips
 
@@ -18,6 +18,7 @@ Then:
 - Start new conversations for each feature.
 - Lead the conversation with generated coding guidelines, project spec and feature PRD.
 - Review all generated files closely before letting the AI execute.
+- Unit tests for each module
 
 ## Credits
 
