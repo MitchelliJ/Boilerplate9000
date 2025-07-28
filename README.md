@@ -31,6 +31,15 @@ This workflow is largely a personal evolution on the works of Harper Reed, Ryan 
 - https://github.com/snarktank/ai-dev-tasks (the YouTube video is worth watching)
 - https://blog.daviddodda.com/most-ai-code-is-garbage-heres-how-mine-isnt
 
+## Start a New Project from This Boilerplate
+
+```bash
+git clone https://github.com/MitchelliJ/Boilerplate9000.git <your-project-name>
+cd <your-project-name>
+rm -rf .git
+git init
+```
+
 ## Connect With Me
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/michielberk/)
