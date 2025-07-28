@@ -4,8 +4,12 @@
 2. Use create_coding_guidelines.md to set the standards for your project.
 3. Use create_feature_prd.md to create a PRD for small projects or features
 4. Use generate_tasks.md to make a to-do list
+
+Then
 5. Start a new conversation for each generated PRD, lead the conversation with the generated documents for context and tell it to finish the to-do list.
 6. Sip coffee
+
+![alt text](r9soy.jpg)
 
 ## Tips
 
