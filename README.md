@@ -1,37 +1,18 @@
 # Boilerplate9000
 
-This document outlines the intended workflow for using the guardrails prompts to build your application.
+1. Use create_project_spec.md to create a high level overview of the project.
+2. Use create_coding_guidelines.md to set the standards for your project.
+3. Use create_feature_prd.md to create a PRD for small projects or features
+4. Use generate_tasks.md to make a to-do list
+5. Start a new conversation for each generated PRD, lead the conversation with the generated documents for context and tell it to finish the to-do list.
+6. Sip coffee
 
-## Notes on setup_boilerplate.md
+## Tips
 
-The included nodejs backend and astro frontend boilerplate is my preferred stack. You might need to move the Astro template selection to your manual terminal when executing this.
-I recommend forking this repo and replacing it with boilerplate for your most used stack for new projects. It assumes Windows Powershell, please adjust if you are in iOS or Linux.
-
-
-## 1. Define Project-Wide Guidelines
-
-Use `set_coding_guidelines.md` to define your stack and make important choices for the project. These are things that are not specific to one feature, but encompass the whole application.
-
-> **Note:** You could also scope out the entire application here with a comprehensive to-do list. However, I prefer to work on a per-feature basis.
-
-## 2. Define Database Schema
-
-Use `database_schema.md` to define your database schema. The reference file created will likely be a living document.
-
-## 3. Create a Product Requirements Document (PRD)
-
-Use `create_prd.md` for the feature you want to work on.
-
-## 4. Generate Development Tasks
-
-Use `generate_tasks.md` with the newly generated PRD to outline the development tasks. Make sure to review the generated tasks carefully.
-
-## Miscellaneous Tips
-
-- **Provide Context**: For best results, provide your AI assistant with relevant reference files (e.g., coding guidelines, database schema) at the start of each new conversation.
-- **Separate Planning from Execution**: First, create detailed plans and reference materials. Then, instruct your AI assistant to execute the work based on those materials. Mixing planning and execution in a single prompt often leads to poor results.
-- **Beware of Documentation Drift**: When using AI to update documentation, be mindful that it can drift away from the actual code over time. Regular manual reviews are recommended.
-- Add Context7 MCP to your IDE if you are working with newer frameworks that LLM's have not learned to work with yet.
+- Explicitly prompt the AI to follow the instructions in the files.
+- Start new conversations for each feature.
+- Lead the conversation with generated coding guidelines, project spec and feature PRD.
+- Review all generated files closely before letting the AI execute.
 
 ## Credits
 
