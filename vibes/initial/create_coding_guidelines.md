@@ -8,7 +8,7 @@ The generated document will serve as a foundational reference for our developmen
 1.  **Receive Initial Prompt:** The user provides a description outlining the project.
 2.  **Ask Clarifying Questions:** Then you MUST ask clarifying questions. The goal is to make the right choices for the project. When appropriate, suggest suitable options. Number each individual question so we can keep context.
 3.  **Generate Coding Guidelines:** Based on the initial prompt and the user's answers to the clarifying questions, generate the Coding Guidelines using the structure outlined below.
-4.  **Deliverable:** Save the Coding Guidelines as `coding_guidelines.md` inside the `/reference` directory. Format in clear Markdown with distinct sections, making it easy to update. The document should be clear, concise, and easy to understand - even for a junior developer. Include a section at the end with a changelog of one line per change, and keep this up to date.
+4.  **Deliverable:** Save the Coding Guidelines as `coding_guidelines.md` inside the `/vibes` directory. Format in clear Markdown with distinct sections, making it easy to update. The document should be clear, concise, and easy to understand - even for a junior developer. Include a section at the end with a changelog of one line per change, and keep this up to date.
 
 ## Sections to cover in the Coding Guidelines
 

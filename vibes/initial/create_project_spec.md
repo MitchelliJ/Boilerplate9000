@@ -8,7 +8,7 @@ To guide an AI assistant in creating a high-level Project Spec (spec) based on t
 3.  **Pause to ingest answers to clarifying questions** Let the user answer the clarifying questions first, then proceed to clarifying the tech stack.
 3.  **Ask Clarifying Questions on Tech Stack:** Then the AI *must* ask clarifying questions to settle on the tech stack. Suggest libraries and frameworks that are a natural fit for the project and explain why they should be considered, but respect the users preferences.
 4.  **Generate spec:** Based on the initial prompt and the user's answers to the clarifying questions, generate a spec using the structure outlined below.
-5.  **Save PRD:** Save the generated document as '[project-name]-spec.md' (e.g., 'banking-app-spec.md') inside the /reference directory.
+5.  **Save PRD:** Save the generated document as 'spec-[project-name].md' (e.g., 'spec-banking-app.md') inside the `/vibes` directory.
 
 ## Spec Structure
 1.  **Project description:** A comprehensive description of the project

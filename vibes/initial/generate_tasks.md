@@ -10,7 +10,7 @@ To guide an AI assistant in creating a detailed, step-by-step task list based on
 5.  **Phase 2: Generate Sub-Tasks:** Once the user confirms, break down each parent task into smaller, actionable sub-tasks necessary to complete the parent task. Ensure sub-tasks cover the implementation details implied by the PRD and adhere to Coding Guidelines.
 6.  **Identify Relevant Files:** Based on the tasks and PRD, identify potential files that will need to be created or modified. List these under the `Relevant Files` section.
 7.  **Generate Final Output:** Combine the parent tasks, sub-tasks, relevant files, and notes into the final Markdown structure
-8.  **Save Task List:** Save the generated document in the /reference directory with the filename 'to-do-[prd-file-name].md' (e.g., 'to-do-banking-app-prd.md')
+8.  **Save Task List:** Save the generated document in the `/vibes` directory with the filename 'to-do-[prd-file-name].md' (e.g., 'to-do-banking-app-prd.md')
 9.  **Wait for Confirmation:** Pause and wait for the user to respond with "Go" before implementing the steps
 
 ## The structure
