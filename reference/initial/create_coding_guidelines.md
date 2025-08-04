@@ -1,26 +1,47 @@
-# The Goal
-To guide an AI assistant in setting the coding guidlines based on project needs. Ask the user if he needs to add anything else to the coding guidelines below. Feel free to make suggestions based on he Project PRD file provided. Take the users response into account and then create a markdown file containing these principles and the ones mentioned below and save them as 'coding_principles.md' in the /reference directory.
+Act as an experienced project manager and software architect. Help me flesh out the coding guidelines for this project.
+
+## Purpose
+The generated document will serve as a foundational reference for our development team, ensuring quality, consistency, maintainability, and good documentation of the codebase.
 
 ## Process
 
-1.  **Receive Initial Prompt:** The user provides a project spec for the project.
-2.  **Ask Clarifying Questions to gather details:** Before writing the spec, the AI *must* ask clarifying questions to gather sufficient detail. The goal is to gather enough input to create a comprehensive project description. Number each question and have answers be multiple choice (a b c etc). Format this nicely with each answer on a new line.
-3.  **Save PRD:** Format the guidelines according to the structure provided below and save the generated coding guidelines as 'coding_guidelines.md' inside the /reference directory.
+1.  **Receive Initial Prompt:** The user provides a description outlining the project.
+2.  **Ask Clarifying Questions:** Then you MUST ask clarifying questions. The goal is to make the right choices for the project. When appropriate, suggest suitable options. Number each individual question so we can keep context.
+3.  **Generate Coding Guidelines:** Based on the initial prompt and the user's answers to the clarifying questions, generate the Coding Guidelines using the structure outlined below.
+4.  **Deliverable:** Save the Coding Guidelines as `coding_guidelines.md` inside the `/reference` directory. Format in clear Markdown with distinct sections, making it easy to update. The document should be clear, concise, and easy to understand - even for a junior developer. Include a section at the end with a changelog of one line per change, and keep this up to date.
 
-# Principles:
--Aim for modular code where each file has a single responsibility and therefore good testability
--Each modular code file should have a unit test written for it with a positive scenario, a negative scenario and 2 edge cases
--Put tests in the appropriate /tests/unit or /test/end_to_end directory
--DRY: Re-use code when possible
--KISS: Keep things simple
--Name functions descriptively with camelCase
--Comment each function on what it does
--Use .env for variables that might be different in development, test and production environments
--If mock data is used, put the mock data in a separate file
--Keep this guidelines file (`coding_guidelines.md`) up to date as the project evolves.
+## Sections to cover in the Coding Guidelines
 
-# Structure
+(exclude the Process in the new document)
 
-1.  **General principles**
-2.  **Coding style**
-3.  **Misc**
+- Project Context
+   We are building [short high level project description]
+
+- Tech stack to be used
+   - Selection of frontend and backend frameworks
+   - Necessary libraries and dependencies
+   - Optional use of a single frontend component library
+
+- Setup and architectural conventions:
+   - Preferred code organization structure
+   - Module organization and dependency management
+   - Scalability and maintainability
+   - Security, performance, or accessibility concerns
+   - Regulatory or compliance requirements
+
+- Coding Standards and Style
+   - Naming conventions (variables, methods, classes, etc)
+   - Code commenting conventions
+   - Management of environment variable secrets
+   - Error handling and logging
+   - Monitoring
+
+- Tooling guidelines
+   - Best practices for our use case for all to be used frameworks, libraries and tools
+
+- Testing standards //to be expanded
+
+- Deployment standards //to be expanded
+
+- Change log
+   When changing or updating this document, append one line outlining the change in one sentence with a timestamp (DD-MM-YYYY)
