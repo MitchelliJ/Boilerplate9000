@@ -24,13 +24,6 @@ This will create neccessary documents in the /vibes directory. You can then:
 - Review all generated files closely before letting the AI execute.
 - Unit tests for each module
 
-## Credits
-
-This workflow is largely a personal evolution on the works of Harper Reed, Ryan Carson and David Dodda. You can find their work here:
-- https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/ 
-- https://github.com/snarktank/ai-dev-tasks (the YouTube video is worth watching)
-- https://blog.daviddodda.com/most-ai-code-is-garbage-heres-how-mine-isnt
-
 ## Start a New Project from This Boilerplate
 
 ```bash
@@ -45,3 +38,10 @@ git init
 - 💼 [LinkedIn](https://www.linkedin.com/in/michielberk/)
 - 🐦 [Bluesky](https://bsky.app/profile/michielberk.com)
 - 🌐 [Personal Website](https://michielberk.com/)
+
+## Credits
+
+This workflow is largely a personal evolution on the works of Harper Reed, Ryan Carson and David Dodda. You can find their work here:
+- https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/ 
+- https://github.com/snarktank/ai-dev-tasks (the YouTube video is worth watching)
+- https://blog.daviddodda.com/most-ai-code-is-garbage-heres-how-mine-isnt
