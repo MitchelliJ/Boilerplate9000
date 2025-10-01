@@ -1,5 +1,5 @@
 ## The goal
-To guide an AI assistant in creating a detailed, step-by-step task list based on an existing PRD. The task list will be handed off to a junior developer for implementation. It is required to be formatted in markdown and saved to the /reference directory in the root of the project with the filename 'to-do-[prd-file-name].md' (e.g., 'to-do-banking-app-prd.md').
+To guide an AI assistant in creating a detailed, step-by-step task list based on an existing PRD. The task list will be handed off to a junior developer for implementation. It is required to be formatted in markdown and saved to the same feature folder as the PRD with the filename 'to-do-prd-[feature-name].md' (e.g., 'to-do-prd-project-initialization.md').
 
 ## The process
 1.  **Receive PRD Reference:** The user points the AI to a specific PRD file and Coding Guidelines file. Ask for these if one is missing
@@ -10,8 +10,13 @@ To guide an AI assistant in creating a detailed, step-by-step task list based on
 5.  **Phase 2: Generate Sub-Tasks:** Once the user confirms, break down each parent task into smaller, actionable sub-tasks necessary to complete the parent task. Ensure sub-tasks cover the implementation details implied by the PRD and adhere to Coding Guidelines.
 6.  **Identify Relevant Files:** Based on the tasks and PRD, identify potential files that will need to be created or modified. List these under the `Relevant Files` section.
 7.  **Generate Final Output:** Combine the parent tasks, sub-tasks, relevant files, and notes into the final Markdown structure
-8.  **Save Task List:** Save the generated document in the `/vibes` directory with the filename 'to-do-[prd-file-name].md' (e.g., 'to-do-banking-app-prd.md')
+8.  **Save Task List:** Save the updated document in the same folder as the PRD with the filename 'to-do-prd-[feature-name].md' (e.g., '/vibes/1. Project initialization/to-do-prd-project-initialization.md')
 9.  **Wait for Confirmation:** Pause and wait for the user to respond with "Go" before implementing the steps
+
+**IMPORTANT FILE SAVING INSTRUCTIONS:**
+- The to-do file MUST be saved in the SAME folder as the PRD
+- Example: If PRD is at `/vibes/1. Project initialization/prd-project-initialization.md`, save to-do as `/vibes/1. Project initialization/to-do-prd-project-initialization.md`
+- You MUST use the write_to_file tool to create this file, not just display it in chat
 
 ## The structure
 The generated task list must adhere to this structure:
