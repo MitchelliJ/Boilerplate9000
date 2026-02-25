@@ -35,3 +35,4 @@ Generate a detailed task list from a feature PRD for a junior developer to imple
 
 **IMPORTANT:** The second last task must always be to run any configured lint, typecheck and test commands outlined in COMMANDS.md.
 **IMPORTANT:** The last task must always be instructions to the user to manually test and / or verify if the implementation was successful. If deemed useful these manual tests could be converted into automated tests later.
+**IMPORTANT:** Only create unit tests when specifically asked for.
