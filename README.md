@@ -1,37 +1,31 @@
 # Boilerplate9000
 
-# How to use
+A structured vibe-coding workflow for Claude Code. Not using Claude Code? The raw prompts are in `.claude\skills`. Remove the Claude Code frontmatter and tag the files into any AI chat to follow the same workflow manually.
 
-1. Use create_project_spec.md to create a high level overview of the project.
-2. Use create_coding_guidelines.md to set the standards for your project.
-3. Use create_feature_prd.md to create a PRD for small projects or features
-4. Use generate_tasks.md to make a to-do list
+## How to use
 
-This will create neccessary documents in the /vibes directory. You can then:
+Run these commands in order inside Claude Code:
 
-5. Start a new conversation for each generated PRD, lead the conversation with the generated documents for context and tell it to finish the to-do list.
-6. Sip coffee while AI builds your app
+### Initial Setup (Once)
+1. `/spec` — Define your project and settle on a tech stack
+2. `/coding-guidelines` — Set coding standards and generate a `COMMANDS.md` with your dev commands
+
+### Feature Development (Repeat for each feature)
+3. `/prd [feature]` — Write a Product Requirements Document for a feature
+4. `/tasks` — Break the PRD into a detailed task list  
+5. `/go` — Implement the feature, working through the task list automatically
+
+> Each command saves its output to the `vibes/` directory, organized per feature. This serves as context and documentation and has the added benefit of being a time capsule!
 
 ![Kermit sipping coffee while vibe coding](r9soy.jpg)
 
-✨I encourage you to fork this repo and customize the prompts to your own project needs and prompting style.✨
+✨I encourage you to fork this repo and customize the prompts to your own project needs and prompting style.
 
 ## Tips
 
-- Explicitly prompt the AI to follow the instructions in the files.
-- Start new conversations for each feature.
-- Lead the conversation with generated coding guidelines, project spec and feature PRD.
-- Review all generated files closely before letting the AI execute.
-- Unit tests for each module
-
-## Start a New Project from This Boilerplate
-
-```bash
-git clone https://github.com/MitchelliJ/Boilerplate9000.git <your-project-name>
-cd <your-project-name>
-rm -rf .git
-git init
-```
+- Take your sweet time to review the generated Project Spec and feature PRD's before running `/go`.
+- `/go` auto-detects the latest PRD — pass a path as argument to target a specific one.
+- Run `/go` in a fresh conversation for each new feature to avoid context pollution.
 
 ## Connect With Me
 
@@ -42,6 +36,7 @@ git init
 ## Credits
 
 This workflow is largely a personal evolution on the works of Harper Reed, Ryan Carson and David Dodda. You can find their work here:
-- https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/ 
+- https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/
 - https://github.com/snarktank/ai-dev-tasks (the YouTube video is worth watching)
 - https://blog.daviddodda.com/most-ai-code-is-garbage-heres-how-mine-isnt
+- The outstanding work of Anthropic

@@ -1,6 +1,7 @@
 Act as an experienced project manager and software architect. Help me flesh out the coding guidelines for this project.
 
 ## Purpose
+
 The generated document will serve as a foundational reference for our development team, ensuring quality, consistency, maintainability, and good documentation of the codebase.
 
 ## Process
@@ -15,33 +16,33 @@ The generated document will serve as a foundational reference for our developmen
 (exclude the Process in the new document)
 
 - Project Context
-   We are building [short high level project description]
+  We are building [short high level project description]
 
 - Tech stack to be used
-   - Selection of frontend and backend frameworks
-   - Necessary libraries and dependencies
-   - Optional use of a single frontend component library
+  - Selection of frontend and backend frameworks
+  - Necessary libraries and dependencies
+  - Optional use of a single frontend component library
 
 - Setup and architectural conventions:
-   - Preferred code organization structure
-   - Module organization and dependency management
-   - Scalability and maintainability
-   - Security, performance, or accessibility concerns
-   - Regulatory or compliance requirements
+  - Preferred code organization structure
+  - Module organization and dependency management
+  - Scalability and maintainability
+  - Security, performance, or accessibility concerns
+  - Regulatory or compliance requirements
 
 - Coding Standards and Style
-   - Naming conventions (variables, methods, classes, etc)
-   - Code commenting conventions
-   - Management of environment variable secrets
-   - Error handling and logging
-   - Monitoring
+  - Naming conventions (variables, methods, classes, etc)
+  - Code commenting conventions
+  - Management of environment variable secrets
+  - Error handling and logging
+  - Monitoring
 
 - Tooling guidelines
-   - Best practices for our use case for all to be used frameworks, libraries and tools
+  - Best practices for our use case for all to be used frameworks, libraries and tools
 
 - Testing standards //to be expanded
 
 - Deployment standards //to be expanded
 
 - Change log
-   When changing or updating this document, append one line outlining the change in one sentence with a timestamp (DD-MM-YYYY)
+  When changing or updating this document, append one line outlining the change in one sentence with a timestamp (DD-MM-YYYY)
