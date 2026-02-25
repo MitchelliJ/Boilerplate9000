@@ -18,6 +18,5 @@ Your skill instructions here...
 
 1. **Project description:** A comprehensive and concise description of the project
 2. **Intended users:** Primary and secondary users
-3. **Feature list:** High-level features, one sentence each. The first feature is always project initialization including dependency management and scaffolding.
+3. **Feature list:** High-level features, one sentence each. The first feature must be project initialization including dependency management and scaffolding and excludes other features.
 4. **Main screens:** Key screens, navigation, and layout overview
-5. **Tech stack:** The chosen tech stack with brief justification for each choice

@@ -20,7 +20,7 @@ Act as an experienced project manager and software architect.
 ## Structure
 
 - **Project Context** — Concise high-level description of what is being built.
-- **Tech stack** — Organised in frontend, backend and database sections. Include frameworks, libraries, optionally a component library and managed services (if any) the project depends on. 
+- **Tech stack** — Chosen tech stack with brief justification for each choice. Organised in frontend, backend and database sections. Include frameworks, libraries, optionally a component library and managed services (if any) the project depends on. 
 - **Setup and architectural conventions** — Code organization, module structure, where tests live, authentication & authorization architecture.
 - **Coding Standards and Style** — Naming conventions, documentation and commenting standards, environment secrets, error handling.
 - **Deployment standards** - Brief description on deployment strategy.
