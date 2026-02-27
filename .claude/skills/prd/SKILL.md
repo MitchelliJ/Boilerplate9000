@@ -24,3 +24,5 @@ The feature to build: $ARGUMENTS
 7. **Open Questions** — Remaining unknowns needing clarification
 
 The PRD should be clear, concise, actionable, and suitable for a junior developer to understand and implement this feature.
+
+**IMPORTANT:** Only create unit tests when specifically asked for.
