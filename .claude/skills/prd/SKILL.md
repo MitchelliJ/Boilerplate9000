@@ -1,7 +1,7 @@
 ---
 name: prd
 description: Generate a Product Requirements Document (PRD) for a feature. Invoke when a new feature is to be implemented or when significant existing logic is being changed.
-model: claude-opus-4-6
+model: claude-opus-4-7
 ---
 
 The feature to build: $ARGUMENTS

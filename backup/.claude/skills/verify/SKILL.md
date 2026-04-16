@@ -1,6 +1,6 @@
 ---
 name: verify
-description: Run verification before claiming any task, feature, or session is complete. Never claim something works without running it.
+description: Run verification before claiming any task, feature, or session is complete. Use any time you are about to say the feature is done
 model: claude-haiku-4-5-20251001
 ---
 

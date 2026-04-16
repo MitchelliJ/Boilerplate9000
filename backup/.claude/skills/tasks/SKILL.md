@@ -47,5 +47,7 @@ Each feature block follows strict RED → GREEN → REFACTOR order. Tests are wr
 **IRON LAW:** No implementation task may begin until the RED task has been confirmed failing.
 **IRON LAW:** No task is marked done until the test suite has been run and output confirmed.
 **Never** defer tests to "later" — if a behavior matters, it has a test now.
-\*\*Tests go in the /tests directory in root.
+The location where the tests should be saved is specified in the coding_guidelines.md.
+If the user needs to take manual steps (such as entering DNS-records or editting Github-Actions), the task becomes to provide clear instructions to the user.
+When done, include a suggestion for a commit message in the message to the user that clearly represents the done work.
 ```
