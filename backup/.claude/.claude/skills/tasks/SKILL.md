@@ -40,14 +40,10 @@ Each feature block follows strict RED → GREEN → REFACTOR order. Tests are wr
   - [ ] 2.3 GREEN: Implement minimal code to make test(s) pass
   - [ ] 2.4 CONFIRM GREEN: Run test suite — verify all tests pass
   - [ ] 2.5 REFACTOR: Clean up; confirm still GREEN
-- [ ] N.0 Final: Run full test suite + lint + typecheck (COMMANDS.md) — all must pass, if not notify user what we could have done differently in the PRD-phase to prevent this block.
+- [ ] N.0 Final: Run full test suite + lint + typecheck (COMMANDS.md) — all must pass
 
 # Notes
 
-**IRON LAW:** No implementation task may begin until the RED task has been confirmed failing.
+**IRON LAW:** No implementation task (x.3) may begin until the RED task (x.1) has been confirmed failing (x.2).
 **IRON LAW:** No task is marked done until the test suite has been run and output confirmed.
 **Never** defer tests to "later" — if a behavior matters, it has a test now.
-The location where the tests should be saved is specified in the coding_guidelines.md.
-If the user needs to take manual steps (such as entering DNS-records or editting Github-Actions), the task becomes to provide clear instructions to the user.
-When done, include a suggestion for a commit message in the message to the user that clearly represents the done work.
-```

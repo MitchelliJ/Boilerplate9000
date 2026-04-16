@@ -9,7 +9,6 @@ Implement the feature described in the PRD by working through its task list.
 ## Setup
 
 **Find the right files:**
-
 - If `$ARGUMENTS` is provided, use it as the path to the PRD file.
 - Otherwise, glob `vibes/*/prd-*.md` and select the most recently modified one.
 - Derive the task file from the same folder: `to-do-prd-[feature-name].md`.
