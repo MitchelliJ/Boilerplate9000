@@ -13,7 +13,7 @@ Implement the feature described in the PRD by working through its task list.
 - If `$ARGUMENTS` is provided, use it as the path to the PRD file.
 - Otherwise, glob `vibes/*/prd-*.md` and select the most recently modified one.
 - Derive the task file from the same folder: `to-do-prd-[feature-name].md`.
-- Also read: `vibes/spec-*.md`, `vibes/coding_guidelines.md`, `COMMANDS.md`.
+- Also read: `vibes/spec-*.md`, `vibes/coding-guidelines.md`, `COMMANDS.md`.
 
 Read all of these files before doing anything else.
 
@@ -43,4 +43,4 @@ These rules are non-negotiable. Do not mark a task done without meeting its cond
 
 - **Design decisions:** If design decisions need to be made, present options with pros, cons and expected complexity and let the user decide before continuing.
 - **Blockers:** If you are genuinely blocked, stop and explain why.
-- **Coding guidelines:** Adhere to `vibes/coding_guidelines.md` at all times. If a task conflicts with the guidelines, explain the situation to user and propose ways forward.
+- **Coding guidelines:** Adhere to `vibes/coding-guidelines.md` at all times. If a task conflicts with the guidelines, explain the situation to user and propose ways forward.

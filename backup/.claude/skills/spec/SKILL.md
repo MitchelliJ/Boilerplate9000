@@ -1,7 +1,7 @@
 ---
 name: spec
 description: Create a Project Specification for this project.
-model: claude-opus-4-6
+model: claude-opus-4-7
 ---
 
 Your skill instructions here...

@@ -1,7 +1,7 @@
 ---
 name: coding-guidelines
 description: Generate coding and architecture guidelines for this project.
-model: claude-opus-4-6
+model: claude-opus-4-7
 ---
 
 Act as an experienced project manager and software architect.

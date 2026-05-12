@@ -21,6 +21,8 @@ Run each step using the commands in COMMANDS.md. Paste the actual output below e
 
 If any step fails: fix it. Do not mark the task done. Do not move on.
 
+If all pass, mark task done.
+
 ## Prohibited Phrases (without evidence)
 
 Do not use these words to describe the state of code unless you have just run a command and shown the output:

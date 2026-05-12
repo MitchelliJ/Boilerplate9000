@@ -8,7 +8,7 @@ Generate a detailed task list from a feature PRD for a junior developer to imple
 
 ## Process
 
-1. **Locate files:** Ask the user for the path to the PRD if not provided. Always read `vibes/coding_guidelines.md` (ask if missing).
+1. **Locate files:** Ask the user for the path to the PRD if not provided. Always read `vibes/coding-guidelines.md` (ask if missing).
 2. **Analyze PRD:** Read and analyze the PRD to understand the feature requirements.
 3. **Analyze Coding Guidelines:** Adhere to coding guidelines at all times. If there are conflicts, inform the user.
 4. **Generate complete task list:** Produce all parent tasks/phases and their sub-tasks.
@@ -47,7 +47,7 @@ Each feature block follows strict RED → GREEN → REFACTOR order. Tests are wr
 **IRON LAW:** No implementation task may begin until the RED task has been confirmed failing.
 **IRON LAW:** No task is marked done until the test suite has been run and output confirmed.
 **Never** defer tests to "later" — if a behavior matters, it has a test now.
-The location where the tests should be saved is specified in the coding_guidelines.md.
+The location where the tests should be saved is specified in the coding-guidelines.md.
 If the user needs to take manual steps (such as entering DNS-records or editting Github-Actions), the task becomes to provide clear instructions to the user.
 When done, include a suggestion for a commit message in the message to the user that clearly represents the done work.
 ```

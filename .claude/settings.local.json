@@ -52,7 +52,29 @@
       "Bash(find *)",
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('dependencies',{}\\).get\\('pino','not found'\\)\\)\")",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('jest',{}\\), indent=2\\)\\)\")",
-      "Bash(npx astro *)"
+      "Bash(npx astro *)",
+      "Read(//c/Users/michi/Documents/Programming/**)",
+      "Read(//c/Users/michi/Documents/Programming/frontend/**)",
+      "Bash(git stash *)",
+      "Read(//c/Users/michi/.claude/skills/**)",
+      "Read(//c/Users/michi/.claude/plugins/**)",
+      "Bash(pnpm --filter backend test --testPathPattern=routes/chatEvents)",
+      "Read(//tmp/**)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\michi\\\\Documents\\\\Programming\\\\NewBitBot\" -Recurse -Filter \"*.md\")",
+      "Bash(Select-Object -First 10 -ExpandProperty FullName)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\michi\\\\Documents\\\\Programming\\\\NewBitBot\" -Recurse -Directory | Select-Object -First 20 | ForEach-Object { $_.FullName })",
+      "Bash(Select-String -Pattern \"\\(reset|password|forgot|auth\\)\")",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\michi\\\\Documents\\\\Programming\\\\NewBitBot\" -Recurse -Depth 2)",
+      "Bash(Select-Object -First 30)",
+      "Bash(dir -Recurse -Include *.tsx,*.ts)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\michi\\\\Documents\\\\Programming\\\\NewBitBot\" -Recurse -Directory)",
+      "Bash(Select-Object -First 20 FullName)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(Remove-Item *)",
+      "Bash(git -C \"C:\\\\Users\\\\michi\\\\Documents\\\\Programming\\\\NewBitBot\" status \"vibes/61. Graph Builder UX Parity\")",
+      "Bash(git -C \"C:\\\\Users\\\\michi\\\\Documents\\\\Programming\\\\NewBitBot\" log --oneline -10 -- \"vibes/61. Graph Builder UX Parity\")",
+      "Bash(git *)"
     ]
   }
 }

@@ -14,7 +14,7 @@ Act as an experienced project manager and software architect.
 4. **Generate Coding Guidelines:** Using the structure below and the answers provided by the user, generate the full coding guidelines document.
 5. **Generate COMMANDS.md:** Using the answers from step 3, generate a `COMMANDS.md` file. The first section should always include the commands to start server and a check command running required linters, typechecks and unit tests (if any).
 6. **Save both files:**
-   - Write coding guidelines to `vibes/coding_guidelines.md` — clear Markdown, distinct sections, concise and understandable for a junior developer.
+   - Write coding guidelines to `vibes/coding-guidelines.md` — clear Markdown, distinct sections, concise and understandable for a junior developer.
    - Write commands reference to `COMMANDS.md` in the project root.
 
 ## Structure
