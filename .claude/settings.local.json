@@ -97,7 +97,9 @@
       "Bash(curl -s http://localhost:4321/login)",
       "Bash(curl -s http://localhost:4321/account)",
       "Bash(grep -rn \"SECRETS_MASTER_KEY=[A-Za-z0-9+/]\" . --include=\"*.example\" --include=\"*.env\")",
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "PowerShell(npm uninstall *)",
+      "PowerShell(npm ls *)"
     ]
   }
 }

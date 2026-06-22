@@ -1,47 +1,40 @@
 # Boilerplate9000
 
-A structured vibe-coding workflow for Claude Code with TDD enforcement built in. Not using Claude Code? The raw prompts are in `.claude\skills`. Remove the Claude Code frontmatter and tag the files into any AI chat to follow the same workflow manually.
+A structured vibe-coding workflow for Claude Code combining spec driven development with test driven development (TDD) using subagents to manage context.
+
+![Kermit sipping coffee while vibe coding](r9soy.jpg)
 
 ## How to use
 
 Run these commands in order inside Claude Code:
 
 ### Initial Setup (Once)
-1. `/spec` — Define your project and settle on a tech stack
-2. `/coding-guidelines` — Set coding standards and generate a `COMMANDS.md` with your dev commands
+1. `/project-synopsis` — Define what your project (the "what" and "why")
+2. `/coding-guidelines` — Settle on your tech stack, set coding standards, and generate a `COMMANDS.md` with your dev commands (also used in skills).
 
 ### Feature Development (Repeat for each feature)
-3. `/prd [feature]` — Write a Product Requirements Document, including test requirements for every functional requirement
-4. `/tasks` — Break the PRD into a task list structured as RED → GREEN → REFACTOR blocks — tests come before implementation
-5. `/go` — Implement the feature, working through the task list with TDD verification gates (must see tests fail before implementing, must see them pass before marking done)
+3. `/prd [feature]` — Co-create a Product Requirements Document, including test requirements for a feature
+4. `/create-tasks` — Break the PRD into a task list structured as RED → GREEN → REFACTOR blocks
+5. `/go` — Implement the feature through the task list with test driven development verification gates
 
-### TDD Utilities
-- `/tdd [unit]` — Drive a single function or class through strict RED-GREEN-REFACTOR interactively
-- `/verify` — Run tests, lint, and typecheck and confirm everything passes before declaring anything done
+### How `/go` works
 
-> Each command saves its output to the `vibes/` directory, organized per feature. This serves as context and documentation and has the added benefit of being a time capsule!
+`/go` runs as an **orchestrator** that never writes code itself — it spawns specialist subagents and owns all verification via bash commands:
 
-![Kermit sipping coffee while vibe coding](r9soy.jpg)
+- **`write-test`** writes one focused failing test for a single behavior (RED). It can't run anything as it has no access to bash.
+- **`write-code`** writes the minimal code to make a failing test pass (GREEN), or refactors without changing behavior. It can't run anything as it also has no access to bash.
+- **The orchestrator** `/go` runs every test, lint, and typecheck itself with the bash tool, gates on the actual output, and only then marks a task done.
 
-✨I encourage you to fork this repo and customize the prompts to your own project needs and prompting style.
+This write/verify separation means no task is ever marked complete on reasoning alone — only on test output created by the orchestrator using bash to run unit tests. It also enforces strict TDD discipline.
 
-## TDD Principles
-
-This workflow enforces test-driven development at every stage:
-
-- **Tests are requirements** — every functional requirement in a PRD includes a test specification
-- **RED before GREEN** — tasks are structured so a failing test must be confirmed before any implementation starts
-- **Evidence, not claims** — `/go` requires pasting actual test output before marking a task done; "should work" is not acceptable
-- **No regressions** — a newly broken test stops all forward progress until fixed
-- **Iron Law** — no production code before a failing test, no exceptions
+> Each command saves its output to the `vibes/` directory, organized per feature. This serves as context for skills and agents and serves as documentation. It has the added benefit of being a time capsule!
 
 ## Tips
 
-- Take your sweet time to review the generated Project Spec and feature PRDs before running `/go`.
+- Take your time to review the generated Project Synopsis and feature PRDs before running `/go`.
 - `/go` auto-detects the latest PRD — pass a path as argument to target a specific one.
-- Run `/go` in a fresh conversation for each new feature to avoid context pollution.
-- Use `/tdd` when you want tighter, interactive control over a specific unit.
-- Use `/verify` at the end of any session before committing.
+- Run `/go` in a fresh conversation or after compacting for each new feature to avoid context window limits.
+- ✨I encourage you to fork this repo and customize the prompts to your own project needs and prompting style.
 
 ## Connect With Me
 
@@ -51,8 +44,9 @@ This workflow enforces test-driven development at every stage:
 
 ## Credits
 
-This workflow is largely a personal evolution on the works of Harper Reed, Ryan Carson, David Dodda and Jesse Vincent. You can find their work here:
+This workflow is largely a personal evolution on the works of Harper Reed, Ryan Carson, David Dodda, Jesse Vincent, and Tabish Bidiwale and others. You can find their work here:
 - https://harper.blog/2025/02/16/my-llm-codegen-workflow-atm/
 - https://github.com/snarktank/ai-dev-tasks (the YouTube video is worth watching)
 - https://blog.daviddodda.com/most-ai-code-is-garbage-heres-how-mine-isnt
 - https://blog.fsck.com/
+- https://github.com/Fission-AI/OpenSpec
