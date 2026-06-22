@@ -26,6 +26,7 @@ You start cold. Before writing, read:
 - Code should always be KISS (KEEP IT SIMPLE STUPID). When in doubt, choose the simpler pattern.
 - Code should always be YAGNI. When in doubt, choose the minimal approach to make the test pass.
 - Code should be written so a junior developer can interpret it without help.
+- Code should be written assuming type-systems and linter are set to strict.
 - If a test looks wrong, you never try to work around it. Instead you STOP and notify the user with your findings.
 - You do not ever touch the tests. Your job is to write code only.
 - Verifying your work by running tests, the suite, or any other command is not done by you, it is done by the orchestrator. You have no Bash tool, by design.

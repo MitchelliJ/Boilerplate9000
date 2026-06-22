@@ -23,7 +23,8 @@ Generate a detailed task list from a feature PRD so a junior developer can imple
 5. Every parent task ends with a CHECK PHASE sub-task that runs lint + typecheck with the bash tool.
 6. Order the tasks according to build dependencies so they can be implemented sequentially.
 7. A test should be scoped to a single behavior.
-8. If the user needs to take manual steps (such as entering DNS-records or provisioning a server), the task becomes to provide clear instructions to the user.
+8. Acceptance criteria are usually one unit of assertion within a test.
+9. If the user needs to take manual steps (such as entering DNS-records or provisioning a server), the task becomes to provide clear instructions to the user.
 
 ## Output structure
 
