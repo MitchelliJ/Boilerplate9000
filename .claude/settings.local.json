@@ -74,7 +74,30 @@
       "PowerShell(Remove-Item *)",
       "Bash(git -C \"C:\\\\Users\\\\michi\\\\Documents\\\\Programming\\\\NewBitBot\" status \"vibes/61. Graph Builder UX Parity\")",
       "Bash(git -C \"C:\\\\Users\\\\michi\\\\Documents\\\\Programming\\\\NewBitBot\" log --oneline -10 -- \"vibes/61. Graph Builder UX Parity\")",
-      "Bash(git *)"
+      "Bash(git *)",
+      "Bash(cat apps/web/tsconfig.json)",
+      "Bash(ls packages/shared packages/shared/src)",
+      "Bash(echo \"=== EXIT: $? ===\")",
+      "Bash(export DATABASE_URL=\"postgres://postgres:postgres@localhost:5433/pigeon?sslmode=disable\")",
+      "Bash(docker exec *)",
+      "Bash(rm -f db/migrations/20260620223555_smoke.sql)",
+      "Bash(cat db/schema.sql)",
+      "PowerShell($c = Get-NetTCPConnection -LocalPort 8787 -State Listen -ErrorAction SilentlyContinue; if \\($c\\) { $c | Select-Object LocalAddress,LocalPort,OwningProcess | Format-Table -AutoSize; $c.OwningProcess | Sort-Object -Unique | ForEach-Object { $p = Get-Process -Id $_ -ErrorAction SilentlyContinue; if \\($p\\) { \"PID $\\($p.Id\\): $\\($p.ProcessName\\)\" } } } else { \"nothing listening on 8787\" })",
+      "Bash(bash -n scripts/deploy.sh)",
+      "Bash(bash scripts/deploy.sh --help)",
+      "Bash(docker --version)",
+      "Bash(ls apps/api/*.config.*)",
+      "Bash(ls apps/api/vitest*)",
+      "Bash(ls -la .env .env.example)",
+      "Bash(export DATABASE_URL=\"postgres://pigeon:pigeon_dev_password@localhost:5432/pigeon?sslmode=disable\")",
+      "Bash(npx tsx *)",
+      "Bash(curl -s http://localhost:8025/api/v1/messages)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(export TEST_DATABASE_URL=\"postgres://pigeon:pigeon_dev_password@localhost:5433/pigeon?sslmode=disable\")",
+      "Bash(curl -s http://localhost:4321/login)",
+      "Bash(curl -s http://localhost:4321/account)",
+      "Bash(grep -rn \"SECRETS_MASTER_KEY=[A-Za-z0-9+/]\" . --include=\"*.example\" --include=\"*.env\")",
+      "Bash(echo \"exit: $?\")"
     ]
   }
 }
